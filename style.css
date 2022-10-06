@@ -1,7 +1,27 @@
 /*
 Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+background color:  #A66CFF
+font color:        #B1E1FF
+secondary color:   #9C9EFE
+tertiary color:    #AFB4FF
 */
+
+/*
+font-family: 'Source Serif Pro', serif;
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;700&display=swap');
+
+header{
+    text-align:center;
+    color:#B1E1FF;
+    font-family: 'Source Serif Pro', serif;
+    font-weight:900;
+    font-size:25px;
+}
+
+body{
+    background-color: #A66CFF;
+    
+}
