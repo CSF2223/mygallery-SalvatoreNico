@@ -19,15 +19,68 @@ header{
     font-family: 'Source Serif Pro', serif;
     font-weight:900;
     font-size:25px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, .8);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .8);
+    letter-spacing: 8px;
+    margin:4px;
+    border-bottom:1px solid #AFB4FF;
+    border-right:1px solid #AFB4FF;
+    border-left:1px solid #AFB4FF;
+    padding: 15px;
 }
 
 body{
     background-color: #A66CFF;
-    
+    font-family: 'Source Serif Pro', serif;
+    color:#B1E1FF;
 }
 
+.Imaget {
+    display: flex;
+    Flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin: 40px 40px;
+}
+.Imaget img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:10px solid #9C9EFE                                                     /* warning in code due to the fact the progam 
+                                                                                thinks the border will be wider than expected */
+}
+.Imaget a {
+    text-decoration: none;
+    color: #B1E1FF;
+}
+.cardt {
+    color:#B1E1FF;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-img{ height: 300px;
-width: 300px;
+@media(min-width: 768px)  {
+    header {
+        font-size: 16px;
+    }
+    
+    .Images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .Imaget{
+        max-width: 28%;
+    }
+}
+img {
+transition: transform .5s; /* Makes Transition smooth */
+}
+
+img:hover {
+transform: scale(1.2); /* Image Pops Out when user hovers over image */
 }
